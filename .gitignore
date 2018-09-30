@@ -21,6 +21,20 @@ xcuserdata/
 *.moved-aside
 *.xccheckout
 *.xcscmblueprint
+*.vtpk
+*.tpk
+*.ipa
+*.geodatabase
+*.zip
+*.framework
+Pods/**
+pods/**
+*.xcuserstate
+*.xcbkptlist
+*.xcuserstate
+*.xcuserstate
+*.xcbkptlist
+
 
 ## Obj-C/Swift specific
 *.hmap
