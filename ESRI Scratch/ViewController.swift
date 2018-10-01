@@ -3,7 +3,7 @@
 //  ESRI Scratch
 //
 //  Created by Jake Shapley on 9/30/18.
-//  Copyright © 2018 Jake Shapley. All rights reserved.
+//  Licensed under MIT
 //
 
 import UIKit
@@ -100,7 +100,6 @@ class ViewController: UIViewController, AGSCalloutDelegate, AGSGeoViewTouchDeleg
                 let graphic = AGSGraphic(geometry: point, symbol: symbol, attributes: attributes as! [String : Any])
                 self.selectedPointLayer.graphics.add(graphic)
                 self.mapView.graphicsOverlays.add(self.selectedPointLayer)
-                //sleep(2)
                 DispatchQueue.main.asyncAfter(deadline: (DispatchTime.now() + .milliseconds(200)), execute: {
                     self.selectedWayPointImageView.alpha = 0.0
                     self.selectedWayPointImageView.removeFromSuperview()
